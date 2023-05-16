@@ -11,6 +11,7 @@
 		785B636D2A0C222800E7AB1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785B636C2A0C222800E7AB1D /* ContentView.swift */; };
 		785B636F2A0C222900E7AB1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 785B636E2A0C222900E7AB1D /* Assets.xcassets */; };
 		785B63722A0C222900E7AB1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 785B63712A0C222900E7AB1D /* Preview Assets.xcassets */; };
+		CF24C36D2A1399030038D5B5 /* PersonalPortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24C36C2A1399030038D5B5 /* PersonalPortfolioView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		785B636C2A0C222800E7AB1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		785B636E2A0C222900E7AB1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		785B63712A0C222900E7AB1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF24C36C2A1399030038D5B5 /* PersonalPortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPortfolioView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				785B636C2A0C222800E7AB1D /* ContentView.swift */,
 				785B636E2A0C222900E7AB1D /* Assets.xcassets */,
 				785B63702A0C222900E7AB1D /* Preview Content */,
+				CF24C36C2A1399030038D5B5 /* PersonalPortfolioView.swift */,
 			);
 			path = ios_in_action;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				785B636D2A0C222800E7AB1D /* ContentView.swift in Sources */,
+				CF24C36D2A1399030038D5B5 /* PersonalPortfolioView.swift in Sources */,
 				785B636B2A0C222800E7AB1D /* ios_in_actionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

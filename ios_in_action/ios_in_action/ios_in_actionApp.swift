@@ -11,7 +11,7 @@ import SwiftUI
 struct ios_in_actionApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PersonalPortfolioView()
         }
     }
 }
