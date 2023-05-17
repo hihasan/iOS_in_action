@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		782A2AE62A1573E700F4C9AB /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A2AE52A1573E700F4C9AB /* DetailScreen.swift */; };
 		CF8D73012A14C33A006E8BA3 /* Hi_Hasan_EcomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D73002A14C33A006E8BA3 /* Hi_Hasan_EcomApp.swift */; };
 		CF8D73032A14C33A006E8BA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D73022A14C33A006E8BA3 /* ContentView.swift */; };
 		CF8D73052A14C33B006E8BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8D73042A14C33B006E8BA3 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		782A2AE52A1573E700F4C9AB /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
 		CF8D72FD2A14C33A006E8BA3 /* Hi Hasan Ecom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hi Hasan Ecom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8D73002A14C33A006E8BA3 /* Hi_Hasan_EcomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hi_Hasan_EcomApp.swift; sourceTree = "<group>"; };
 		CF8D73022A14C33A006E8BA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				CF8D73232A1506BA006E8BA3 /* HomeScreen.swift */,
+				782A2AE52A1573E700F4C9AB /* DetailScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				782A2AE62A1573E700F4C9AB /* DetailScreen.swift in Sources */,
 				CF8D73032A14C33A006E8BA3 /* ContentView.swift in Sources */,
 				CF8D73012A14C33A006E8BA3 /* Hi_Hasan_EcomApp.swift in Sources */,
 				CF8D73242A1506BA006E8BA3 /* HomeScreen.swift in Sources */,

@@ -12,49 +12,51 @@ struct HomeScreen: View {
     
     private let categories = ["All", "Chair", "Sofa", "Lamp", "Kitchen", "Table", "Computer Table"]
     var body: some View {
-        ZStack{
-            Color("Bg").edgesIgnoringSafeArea(.all)
-            
-            ScrollView   {
-                VStack(alignment: .leading){
-                    AppBarView()
-                    TagLineView().padding()
-                    SearchAndScanView()
-                    
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack{
-                            ForEach(0 ..< categories.count) { item in
-                                CategoryView(isActive: item == selectedIndex
-                                             , text: categories[item])
-                                .onTapGesture {
-                                    selectedIndex = item
+        NavigationView {
+            ZStack{
+                Color("Bg").edgesIgnoringSafeArea(.all)
+                
+                ScrollView   {
+                    VStack(alignment: .leading){
+                        AppBarView()
+                        TagLineView().padding()
+                        SearchAndScanView()
+                        
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack{
+                                ForEach(0 ..< categories.count) { item in
+                                    CategoryView(isActive: item == selectedIndex
+                                                 , text: categories[item])
+                                    .onTapGesture {
+                                        selectedIndex = item
+                                    }
                                 }
-                            }
-                        }.padding()
+                            }.padding()
+                        }
+                        
+                        ProductListWithTitleView(title: "Popoular")
+                        ProductListWithTitleView(title: "Global").padding(.top)
+                        
+                        
+                        
                     }
-                    
-                    ProductListWithTitleView(title: "Popoular")
-                    ProductListWithTitleView(title: "Global").padding(.top)
-                    
-                    
-                    
                 }
+                
+                //custom Bottom navbar
+                
+                HStack{
+                    TabItemView(image: Image(systemName: "house")){}
+                    TabItemView(image: Image(systemName: "heart")){}
+                    TabItemView(image: Image(systemName: "person")){}
+                    TabItemView(image: Image(systemName: "gear")){}
+                }.padding()
+                    .background(Color.white)
+                    .clipShape(Capsule())
+                    .padding(.horizontal)
+                    .shadow(color : Color.black.opacity(0.15), radius: 8, x: 2, y:6)
+                    .frame(maxHeight: .infinity, alignment: .bottom)
+                
             }
-            
-            //custom Bottom navbar
-            
-            HStack{
-                TabItemView(image: Image(systemName: "house")){}
-                TabItemView(image: Image(systemName: "heart")){}
-                TabItemView(image: Image(systemName: "person")){}
-                TabItemView(image: Image(systemName: "gear")){}
-            }.padding()
-                .background(Color.white)
-                .clipShape(Capsule())
-                .padding(.horizontal)
-                .shadow(color : Color.black.opacity(0.15), radius: 8, x: 2, y:6)
-                .frame(maxHeight: .infinity, alignment: .bottom)
-            
         }
     }
 }
@@ -184,7 +186,13 @@ struct ProductListWithTitleView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(0 ..< 4) { index in
-                    ProductCardView(img: "chair_\(index+1)", size: 210).padding(.leading)
+                    NavigationLink(
+                        destination: DetailScreen(),
+                        label:  {
+                            ProductCardView(img: "chair_\(index+1)", size: 210).padding(.leading)
+                    })
+                    .navigationBarHidden(true)
+                    .foregroundColor(.white)
                 }
                 .padding(.trailing)
             }
