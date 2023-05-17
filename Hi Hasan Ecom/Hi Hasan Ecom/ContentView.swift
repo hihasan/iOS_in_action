@@ -35,31 +35,9 @@ struct ContentView: View {
                         }.padding()
                     }
                     
-                    Text("Popular")
-                        .font(.custom("PlayfairDisplay-Regular", size: 24))
-                        .padding(.horizontal)
-                    
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack {
-                            ForEach(0 ..< 4) { index in
-                                ProductCardView(img: "chair_\(index+1)", size: 210).padding(.leading)
-                            }
-                            .padding(.trailing)
-                        }
-                    }
-                    
-                    Text("Popular")
-                        .font(.custom("PlayfairDisplay-Regular", size: 24))
-                        .padding(.horizontal)
-                    
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack {
-                            ForEach(0 ..< 4) { index in
-                                ProductCardView(img: "chair_\(index+1)", size: 210).padding(.leading)
-                            }
-                            .padding(.trailing)
-                        }
-                    }
+                    ProductListWithTitleView(title: "Popoular")
+                    ProductListWithTitleView(title: "Global")
+                
                     
                     
                 }
@@ -180,4 +158,24 @@ struct ProductCardView: View {
         .background(.white)
         .cornerRadius(20.0)
     }
+}
+
+struct ProductListWithTitleView: View {
+    let title : String
+    var body: some View {
+        Text(title)
+            .font(.custom("PlayfairDisplay-Regular", size: 24))
+            .padding(.horizontal)
+        
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                ForEach(0 ..< 4) { index in
+                    ProductCardView(img: "chair_\(index+1)", size: 210).padding(.leading)
+                }
+                .padding(.trailing)
+            }
+        }
+    }
+    
+    
 }
