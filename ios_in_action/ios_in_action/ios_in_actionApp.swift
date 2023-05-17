@@ -11,7 +11,21 @@ import SwiftUI
 struct ios_in_actionApp: App {
     var body: some Scene {
         WindowGroup {
-            PersonalPortfolioView()
+            TabView{
+                ContentView().tabItem{
+                    Label("Content View", systemImage: "gear")
+                }
+                
+                PersonalPortfolioView().tabItem{
+                    Label("Person Details", systemImage: "person")
+                }
+                
+                PickerView().tabItem(){
+                    Label("Shape View", systemImage: "book")
+                }
+                
+            }
+            
         }
     }
 }
