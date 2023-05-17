@@ -8,40 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @State private var selectedIndex : Int = 0
-    
-    private let categories = ["All", "Chair", "Sofa", "Lamp", "Kitchen", "Table", "Computer Table"]
-    
+
     var body: some View {
-        ZStack{
-            Color("Bg").edgesIgnoringSafeArea(.all)
-            
-            ScrollView   {
-                VStack(alignment: .leading){
-                    AppBarView()
-                    TagLineView().padding()
-                    SearchAndScanView()
-                    
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack{
-                            ForEach(0 ..< categories.count) { item in
-                                CategoryView(isActive: item == selectedIndex
-                                             , text: categories[item])
-                                .onTapGesture {
-                                    selectedIndex = item
-                                }
-                            }
-                        }.padding()
-                    }
-                    
-                    ProductListWithTitleView(title: "Popoular")
-                    ProductListWithTitleView(title: "Global")
-                
-                    
-                    
-                }
-            }
+        VStack {
+            HomeScreen()
         }
     }
 }
@@ -179,3 +149,15 @@ struct ProductListWithTitleView: View {
     
     
 }
+
+struct TabItemView: View {
+    let image : Image
+    let action: () -> Void
+    var body: some View {
+        Button(action: action, label: {
+            image.frame(maxWidth: .infinity)
+        })
+    }
+}
+
+

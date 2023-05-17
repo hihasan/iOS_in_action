@@ -13,6 +13,7 @@
 		CF8D73082A14C33B006E8BA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8D73072A14C33B006E8BA3 /* Preview Assets.xcassets */; };
 		CF8D731E2A14E039006E8BA3 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF8D731D2A14E039006E8BA3 /* PlayfairDisplay-Regular.ttf */; settings = {ASSET_TAGS = (New, ); }; };
 		CF8D73202A14E06B006E8BA3 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF8D731F2A14E06B006E8BA3 /* PlayfairDisplay-Bold.ttf */; settings = {ASSET_TAGS = (New, ); }; };
+		CF8D73242A1506BA006E8BA3 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D73232A1506BA006E8BA3 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CF8D731D2A14E039006E8BA3 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		CF8D731F2A14E06B006E8BA3 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		CF8D73212A14E11F006E8BA3 /* Hi-Hasan-Ecom-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Hi-Hasan-Ecom-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CF8D73232A1506BA006E8BA3 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		CF8D72FF2A14C33A006E8BA3 /* Hi Hasan Ecom */ = {
 			isa = PBXGroup;
 			children = (
+				CF8D73222A1506AA006E8BA3 /* Screens */,
 				CF8D73212A14E11F006E8BA3 /* Hi-Hasan-Ecom-Info.plist */,
 				CF8D731C2A14E005006E8BA3 /* Fonts */,
 				CF8D73002A14C33A006E8BA3 /* Hi_Hasan_EcomApp.swift */,
@@ -81,6 +84,14 @@
 				CF8D731D2A14E039006E8BA3 /* PlayfairDisplay-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CF8D73222A1506AA006E8BA3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CF8D73232A1506BA006E8BA3 /* HomeScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 			files = (
 				CF8D73032A14C33A006E8BA3 /* ContentView.swift in Sources */,
 				CF8D73012A14C33A006E8BA3 /* Hi_Hasan_EcomApp.swift in Sources */,
+				CF8D73242A1506BA006E8BA3 /* HomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
