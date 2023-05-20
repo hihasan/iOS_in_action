@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78615B812A195C6E009F4751 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = 78615B802A195C6E009F4751 /* SwiftUIFontIcon */; };
+		78615B832A195D43009F4751 /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78615B822A195D43009F4751 /* TransactionListViewModel.swift */; };
 		78FFBB102A18B26E0010A5D7 /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FFBB0F2A18B26E0010A5D7 /* ExpenseTrackerApp.swift */; };
 		78FFBB122A18B26E0010A5D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FFBB112A18B26E0010A5D7 /* ContentView.swift */; };
 		78FFBB142A18B26F0010A5D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78FFBB132A18B26F0010A5D7 /* Assets.xcassets */; };
@@ -18,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78615B822A195D43009F4751 /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
 		78FFBB0C2A18B26E0010A5D7 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FFBB0F2A18B26E0010A5D7 /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
 		78FFBB112A18B26E0010A5D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78615B812A195C6E009F4751 /* SwiftUIFontIcon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +66,7 @@
 				78FFBB0F2A18B26E0010A5D7 /* ExpenseTrackerApp.swift */,
 				78FFBB112A18B26E0010A5D7 /* ContentView.swift */,
 				78FFBB252A18BF060010A5D7 /* TransactionRow.swift */,
+				78615B822A195D43009F4751 /* TransactionListViewModel.swift */,
 				78FFBB1F2A18BC400010A5D7 /* TransactionModel.swift */,
 				78FFBB1D2A18B7060010A5D7 /* Extensions.swift */,
 				78FFBB132A18B26F0010A5D7 /* Assets.xcassets */,
@@ -95,6 +100,9 @@
 			dependencies = (
 			);
 			name = ExpenseTracker;
+			packageProductDependencies = (
+				78615B802A195C6E009F4751 /* SwiftUIFontIcon */,
+			);
 			productName = ExpenseTracker;
 			productReference = 78FFBB0C2A18B26E0010A5D7 /* ExpenseTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 78FFBB032A18B26E0010A5D7;
+			packageReferences = (
+				78615B7F2A195C6E009F4751 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
+			);
 			productRefGroup = 78FFBB0D2A18B26E0010A5D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -154,6 +165,7 @@
 				78FFBB122A18B26E0010A5D7 /* ContentView.swift in Sources */,
 				78FFBB262A18BF060010A5D7 /* TransactionRow.swift in Sources */,
 				78FFBB1E2A18B7060010A5D7 /* Extensions.swift in Sources */,
+				78615B832A195D43009F4751 /* TransactionListViewModel.swift in Sources */,
 				78FFBB102A18B26E0010A5D7 /* ExpenseTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +365,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		78615B7F2A195C6E009F4751 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huybuidac/SwiftUIFontIcon";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		78615B802A195C6E009F4751 /* SwiftUIFontIcon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78615B7F2A195C6E009F4751 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
+			productName = SwiftUIFontIcon;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 78FFBB042A18B26E0010A5D7 /* Project object */;
 }
