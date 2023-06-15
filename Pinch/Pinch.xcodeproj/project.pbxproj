@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF547C5A2A3AE83A0026272E /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF547C592A3AE83A0026272E /* PageData.swift */; };
+		CF547C5C2A3AE8760026272E /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF547C5B2A3AE8760026272E /* PageModel.swift */; };
 		CF85FBCC2A39CA5E008160F0 /* PinchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85FBCB2A39CA5E008160F0 /* PinchApp.swift */; };
 		CF85FBCE2A39CA5E008160F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85FBCD2A39CA5E008160F0 /* ContentView.swift */; };
 		CF85FBD02A39CA60008160F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF85FBCF2A39CA60008160F0 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF547C592A3AE83A0026272E /* PageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
+		CF547C5B2A3AE8760026272E /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		CF85FBC82A39CA5E008160F0 /* Pinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF85FBCB2A39CA5E008160F0 /* PinchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchApp.swift; sourceTree = "<group>"; };
 		CF85FBCD2A39CA5E008160F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 		CF85FBDB2A39CBB1008160F0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CF547C5B2A3AE8760026272E /* PageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 		CF85FBDC2A39CBBB008160F0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				CF547C592A3AE83A0026272E /* PageData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -177,7 +183,9 @@
 			files = (
 				CF85FBCE2A39CA5E008160F0 /* ContentView.swift in Sources */,
 				CF85FBE22A39E89E008160F0 /* ControllImageView.swift in Sources */,
+				CF547C5A2A3AE83A0026272E /* PageData.swift in Sources */,
 				CF85FBE02A39E147008160F0 /* InfoPannelView.swift in Sources */,
+				CF547C5C2A3AE8760026272E /* PageModel.swift in Sources */,
 				CF85FBCC2A39CA5E008160F0 /* PinchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
